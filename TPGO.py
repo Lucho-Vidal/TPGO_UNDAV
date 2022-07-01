@@ -18,18 +18,19 @@ def cant_dias_mes (mes, anio):
         cant_dias=30
     elif mes == 2:
         if es_bisiesto(anio):
-            mes=29
+            cant_dias=29
         else:
-            mes=28
+            cant_dias=28
     return cant_dias
 def valida_fecha(dia,mes,anio):
     """ Recibe por parámetro una fecha en números (Día, mes y año), 
     Devuelve un valor booleano que indica si esa fecha es válida o no. 
     Invoca a la función cant_dias_mes (mes, anio). ademas la fecha no puede ser inferior a 2022"""
     es_valida = False
-    dia_max = cant_dias_mes(mes,anio)
-    if dia_max>0 and dia <= dia_max and anio>=2022:
-        es_valida = True
+    if mes>=1 and mes<=12 and anio>=2022:
+        dia_max = cant_dias_mes(mes,anio)
+        if dia_max>0 and dia <= dia_max:
+            es_valida = True
     return es_valida
 def valida_cant (cantidad):
     """ Valida que cantidad de productos este dentro de los parámetros solicitados. """
