@@ -7,7 +7,7 @@ def valida_correo (correo):
     cont_arroba=0
     cont_punto=0
     # el primer y ultimo carácter no pueden ser: 64 -> '@', 46 -> '.'
-    if ord(correo[0])!=64 or ord(correo[0])!=46 or ord(correo[len(correo)-1])!=64 or ord(len(correo)-1)!=46:
+    if ord(correo[0])!=64 and ord(correo[0])!=46 and ord(correo[len(correo)-1])!=64 and ord(correo[len(correo)-1])!=46:
         valido = True
         for c in correo:
             # no pueden haber espacios (32) 
