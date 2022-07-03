@@ -1,7 +1,7 @@
-from Com_3_Carrillo import pide_prod
-from Com_3_Fontes import valida_fecha
-from Com_3_Maciel import valida_correo
-from Com_3_Rando import valida_cant
+from Com3_Carrillo import pide_prod
+from Com3_Fontes import valida_fecha
+from Com3_Maciel import valida_correo
+from Com3_Rando import valida_cant
 
 
 def main():
