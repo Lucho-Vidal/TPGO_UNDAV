@@ -1,4 +1,4 @@
-from Com_3_Rando import valida_cant
+from Com3_Rando import valida_cant
 
 def pide_prod():
     """ Función dedicada a solicitar la cantidad de unidades

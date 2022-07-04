@@ -60,16 +60,16 @@ def main():
             if (monto_pedido > monto_max):
                 monto_max = monto_pedido
             # Imprimo los resultados de el pedido
-            print("El DNI del socio es:{}".format(dni))
-            print("El Correo del socio es:{}".format(correo))
-            print("La cantidad de unidades solicitadas de Yerba Mate 1kg:{}".format(uni_soli_yerba))
-            print("La cantidad de unidades solicitadas de Té Negro 100grs:{}".format(uni_soli_ten))
-            print("La cantidad de unidades solicitadas de Té Verde 100grs:{}".format(uni_soli_tev))
-            print("La cantidad de unidades solicitadas de Miel Mistol ½ kg:{}".format(uni_soli_mielm))
-            print("La cantidad de unidades solicitadas de Miel Algarrobo 1kg:{}".format(uni_soli_miela))
+            print("\nEl DNI del socio es: {}".format(dni))
+            print("El Correo del socio es: {}".format(correo))
+            print("La cantidad de unidades solicitadas de Yerba Mate 1kg: {}".format(uni_soli_yerba))
+            print("La cantidad de unidades solicitadas de Té Negro 100grs: {}".format(uni_soli_ten))
+            print("La cantidad de unidades solicitadas de Té Verde 100grs: {}".format(uni_soli_tev))
+            print("La cantidad de unidades solicitadas de Miel Mistol ½ kg: {}".format(uni_soli_mielm))
+            print("La cantidad de unidades solicitadas de Miel Algarrobo 1kg: {}".format(uni_soli_miela))
+            print("El monto total del pedido es de: ${}".format(monto_pedido))
         elif option==2:
-            print("Se registraron un total de {} ventas.".format(cant_total_vent))
-            print("Por un importe de: ${}".format(suma_monto_pedido))
+            print("Se registraron un total de {} ventas por un importe total de: ${}".format(cant_total_vent, suma_monto_pedido))
             if cant_total_vent != 0:
                 print("El porcentaje de las ventas con los 5 tipos de productos es del {}%".format(cant_vent_cinco*100/cant_total_vent))
             print("Se solicitaron {} unidades de {}".format(total_yerba_vent,"Yerba Mate 1kg"))
@@ -77,7 +77,7 @@ def main():
             print("Se solicitaron {} unidades de {}".format(total_tev_vent,"Té Verde 100grs"))
             print("Se solicitaron {} unidades de {}".format(total_mielm_vent,"Miel Mistol ½ kg"))
             print("Se solicitaron {} unidades de {}".format(total_miela_vent,"Miel Algarrobo 1kg"))
-            print("El mayor importe registrado fue de:{}".format(monto_max))
+            print("El mayor importe registrado fue de: ${}".format(monto_max))
     
 if __name__== '__main__':
     main()
